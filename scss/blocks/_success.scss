@@ -1,0 +1,89 @@
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 244px 285px 90px;
+
+    @include vp-1023 {
+        padding: 324px 69px 125px;
+    }
+
+    @include vp-767 {
+        padding: 287px 160px 142px;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 0 20px;
+        font-size: 32px;
+        line-height: 36px;
+
+        @include vp-1023 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 20px;
+            margin: 0 0 15px;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 40px;
+
+        @include vp-767 {
+            font-size: 13px;
+            line-height: 16px;
+            margin: 0 0 30px;
+        }
+    }
+
+    &__btn {
+        width: 200px;
+        height: 46px;
+        margin: 0 auto;
+
+        @include vp-1023 {
+            width: 160px;
+            height: 44px;
+        }
+    }
+
+    &__svg-right {
+        position: absolute;
+        top: 174px;
+        right: 485px;
+
+        @include vp-1023 {
+            top: 254px;
+            right: 319px;
+        }
+
+        @include vp-767 {
+            top: 217px;
+            right: 122px;
+        }
+    }
+
+    &__svg-left {
+        position: absolute;
+        top: 149px;
+        left: 485px;
+
+        @include vp-1023 {
+            top: 229px;
+            left: 319px;
+        }
+
+        @include vp-767 {
+            top: 192px;
+            left: 123px;
+        }
+    }
+}

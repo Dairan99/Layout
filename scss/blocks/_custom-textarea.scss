@@ -1,0 +1,33 @@
+.custom-textarea {
+    position: relative;
+    display: flex;
+    width: 960px;
+    margin: 0 0 40px;
+
+    @include vp-1023 {
+        width: 528px;
+    }
+
+    &__field {
+        width: 100%;
+        min-height: 160px;
+        border-radius: 8px;
+        border: 1px solid #D6DCE6;
+        color: #242424;
+        resize: none;
+
+        @include vp-1023 {
+            min-height: 163px;
+        }
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 18px;
+        color: #8C8C8D;
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+}
+

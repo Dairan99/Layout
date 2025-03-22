@@ -1,0 +1,66 @@
+.application {
+    display: block;
+
+    &__group {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 600;
+        margin: 30px auto 83px;
+
+        @include vp-1023 {
+        font-size: 26px;
+        line-height: 32px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+        margin: 0 0 53px;
+
+        @include vp-1023 {
+            margin: 0 0 43px;
+            gap: 43px;
+            flex-direction: column;
+        }
+    }
+
+    &__button {
+        background: #9E5FC4;
+        color: #FFFFFF;
+        width: 300px;
+        margin: 0 auto 10px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        color: #8C8C8D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__airplane-img {
+        position: absolute;
+        bottom: 40px;
+        right: 160px;
+    }
+
+    &__suitcase-img {
+        position: absolute;
+        left: 130px;
+        bottom: 80px;
+
+        @include vp-1023 {
+            left: 20px;
+            bottom: 110px;
+        }
+    }
+}

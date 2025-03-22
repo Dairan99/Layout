@@ -1,0 +1,46 @@
+.gallery-block {
+  margin: 0 0 80px;
+
+  &__wrap {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 215px;
+    gap: 20px;
+
+    @include vp-1023 {
+      grid-template-columns: 500px 180px;
+    }
+  }
+
+  &__citys {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+      width: 335px;
+      height: 44px;
+      font-size: 11px;
+      line-height: 16px;
+      margin: 0 0 30px;
+      padding: 14px 109px 14px 135px;
+      position: relative;
+    }
+  }
+
+  &__nav-svg {
+    @include vp-767 {
+      position: absolute;
+      top: 50%;
+      left: 109px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @include vp-767 {
+      width: 335px;
+    }
+  }
+}
