@@ -6,8 +6,7 @@
 
 ## Установка
 
-1.  Склонируйте репозиторий: https://github.com/Dairan99/Animation
-2.  Перейдите в директорию проекта: `VALINABALI`
+1.  Склонируйте репозиторий: https://github.com/Dairan99/Layout
 
 ## Использование
 
