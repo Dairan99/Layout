@@ -986,6 +986,10 @@ a {
     flex-direction: column;
   }
 }
+.gallery-block__left {
+  max-width: 100%;
+  width: 100%;
+}
 .gallery-block__citys {
   display: none;
 }
